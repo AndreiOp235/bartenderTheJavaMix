@@ -2,7 +2,7 @@ package clienti;
 import barul.*;
 
 public class Student {
-	Student()
+	public Student()
 	{
 		System.out.println("o oferta !"); //welcome message
 	}

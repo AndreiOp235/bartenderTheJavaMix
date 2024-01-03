@@ -4,11 +4,12 @@ import clienti.Student;
 public class bartenderTheJavaMix {
 
     public static void main(String[] args) {
-    	System.out.println("o oferta");
-        
-        System.out.println("part unos");
-        Student student = new Student();
-        //nimic
+    	System.out.println("Bun venit la 1301Bar");
+    	//title screen
+    	//sub numele noastre si 3 sec sleep
+    	
+        Student student = new Student(); //initializez clientul
+
         student.beaBautura(null);
 
         // bautura din pahar, practic cazul de baza
@@ -16,12 +17,12 @@ public class bartenderTheJavaMix {
         student.beaBautura(pahar);
 
         // Bearea din doza de bere (clasa adaptor)
-        Bautura dozaDeBere = new AdaptorDoza("tip2");
-        student.beaBautura(dozaDeBere);
+        Bautura doza = new Doza("bere");
+        student.beaBautura(doza);
 
         // Bearea din sticla de bere (obiect adaptor)
-        Bautura sticlaDeBere = new AdaptorSticla(new Sticla("tip3"));
-        student.beaBautura(sticlaDeBere);
+        Bautura sticla = new AdaptorSticla(new Sticla("bere"));
+        student.beaBautura(sticla);
         
 		/*
 		 * //part dos wiki 
