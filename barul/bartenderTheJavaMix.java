@@ -19,7 +19,7 @@ public class bartenderTheJavaMix {
         student.beaBautura(dozaDeBere);
 
         // Bearea din sticla de bere (obiect adaptor)
-        Bautura sticlaDeBere = new AdaptorSticla(new SticlaDeBere("tip3"));
+        Bautura sticlaDeBere = new AdaptorSticla(new Sticla("tip3"));
         student.beaBautura(sticlaDeBere);
         
 		/*
@@ -138,38 +138,7 @@ class AdaptorDoza extends Pahar {
  }
 }
 
-//Clasa pentru sticla de bere
-class SticlaDeBere implements Bautura {
- private String tip;
 
- public SticlaDeBere(String tip) {
-     this.tip = tip;
- }
-
- @Override
- public void bea() {
-     System.out.println("A bea din sticla de " + tip);
- }
-}
-
-//Adaptor de tip obiect pentru sticla
-class AdaptorSticla implements Bautura {
- private SticlaDeBere sticlaDeBere;
-
- public AdaptorSticla(SticlaDeBere sticlaDeBere) {
-     this.sticlaDeBere = sticlaDeBere;
- }
-
- @Override
- public void bea() {
-     desfaceSticla();
-     sticlaDeBere.bea();
- }
-
- private void desfaceSticla() {
-     System.out.println("Deschide sticla cu un desfacător");
- }
-}
 
 //Clasa Student
 class Student {
