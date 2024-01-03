@@ -120,25 +120,3 @@ class LightningToMicroUsbAdapter implements IMicroUsbPhone {
 }
 
 
-
-
-
-//Adaptor de tip clasă pentru doza
-class AdaptorDoza extends Pahar {
- public AdaptorDoza(String tip) {
-     super(tip);
- }
-
- @Override
- public void bea() {
-     desfaceDoza();
-     super.bea();
- }
-
- private void desfaceDoza() {
-     System.out.println("Deschide doza pentru a deveni echivalentul unui pahar");
- }
-}
-
-
-
