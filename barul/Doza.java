@@ -7,6 +7,7 @@ public class Doza extends Pahar
 	public Doza(String tip)
 	{
 		super(tip);
+		setDeschis(false); //fortat cream obiectul sa fie incompatibil
 	}
 	
 	public void bea()
@@ -17,6 +18,7 @@ public class Doza extends Pahar
 	
 	private void desfaceDoza()
 	{
+		setDeschis(true);
 		System.out.println("Desface doza pentru a deveni ca un pahar");
 	}
 }

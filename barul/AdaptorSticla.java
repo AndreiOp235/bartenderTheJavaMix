@@ -15,6 +15,7 @@ public class AdaptorSticla implements Bautura {
 	
 	private void desfaceSticla()
 	{
+		sticla.deschis=true;
 		System.out.println("Desfacem sticla cu un desfacator !");
 	}
 }
