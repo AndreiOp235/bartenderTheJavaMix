@@ -1,4 +1,5 @@
 package barul;
+import clienti.Student;
 
 public class bartenderTheJavaMix {
 
@@ -140,16 +141,3 @@ class AdaptorDoza extends Pahar {
 
 
 
-//Clasa Student
-class Student {
-	Student()
-	{
-		System.out.println("o oferta !"); //welcome message in "consola"
-	}
- public void beaBautura(Bautura bautura) {
-	 if(bautura!=null)
-		 bautura.bea();
-	 else
-		 System.out.println("studentul nu bea nimic");
- }
-}
