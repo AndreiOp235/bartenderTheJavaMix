@@ -16,7 +16,7 @@ public class Doza extends Pahar
 		super.bea();
 	}
 	
-	private void desfaceDoza()
+	public void desfaceDoza()
 	{
 		setDeschis(true);
 		System.out.println("Desface doza pentru a deveni ca un pahar");
