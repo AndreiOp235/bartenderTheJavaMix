@@ -17,7 +17,7 @@ public class bartenderTheJavaMix {
 		Bautura pahar = new Pahar("bere");
 		student.beaBautura(pahar);
 
-		// Bearea din doza de bere (clasa adaptor)
+		// Berea din doza de bere (clasa adaptor)
 		Bautura doza = new Doza("Doza de bere"); 
 		student.beaBautura(doza);
 
